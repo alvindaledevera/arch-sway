@@ -18,7 +18,6 @@ PKGS=(
     # Bluetooth
     bluez
     bluez-utils
-    pulseaudio-bluetooth # optional if using pulseaudio fallback
 
     # Printing / Scanning
     cups
