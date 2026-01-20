@@ -1,0 +1,1 @@
+git clone https://github.com/alvindaledevera/arch-sway.git; cd arch-sway; chmod +x install.sh; ./install.sh
