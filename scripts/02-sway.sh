@@ -8,6 +8,7 @@ set -euo pipefail
 echo "==> Installing Sway + Wayland environment..."
 
 PKGS=(
+    foot
     sway
     swaylock
     swayidle
