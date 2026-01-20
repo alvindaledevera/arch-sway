@@ -9,6 +9,7 @@ echo "==> Installing Sway + Wayland environment..."
 
 PKGS=(
     foot
+    wmenu
     sway
     swaylock
     swayidle
