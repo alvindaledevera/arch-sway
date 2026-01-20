@@ -5,16 +5,32 @@ set -euo pipefail
 # 04-aur.sh - yay + AUR packages (simplified)
 # ==================================================
 
-echo "==> Installing yay (AUR helper)..."
+echo "==> Installing yay-bin (AUR helper)..."
 
-# Install yay if not already installed
+# -----------------------------
+# Ensure build dependencies
+# -----------------------------
+sudo pacman -S --needed --noconfirm git base-devel
+
+# -----------------------------
+# Install yay-bin if not installed
+# -----------------------------
 if ! command -v yay &>/dev/null; then
-    git clone https://aur.archlinux.org/yay.git /tmp/yay
-    cd /tmp/yay
+    echo "==> Cloning yay-bin AUR repository..."
+    git clone https://aur.archlinux.org/yay-bin.git /tmp/yay-bin
+    cd /tmp/yay-bin
+
+    echo "==> Building and installing yay-bin..."
     makepkg -si --noconfirm
+
+    # Cleanup
     cd "$OLDPWD"
-    rm -rf /tmp/yay
+    rm -rf /tmp/yay-bin
+else
+    echo "==> yay-bin is already installed ✅"
 fi
+
+echo "==> yay-bin installation complete ✅"
 
 echo "==> Installing AUR packages..."
 
