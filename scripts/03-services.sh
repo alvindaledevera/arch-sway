@@ -8,6 +8,8 @@ set -euo pipefail
 echo "==> Installing system services..."
 
 PKGS=(
+    #display manager
+    ly
 
     # Audio / Sound
     pipewire
@@ -32,6 +34,7 @@ sudo pacman -S --needed --noconfirm "${PKGS[@]}"
 echo "==> Enabling system services..."
 
 # Enable services
+sudo systemctl enable --now ly@tty1.service
 sudo systemctl enable --now bluetooth.service
 sudo systemctl enable --now cups.service
 

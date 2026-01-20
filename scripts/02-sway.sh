@@ -8,8 +8,8 @@ set -euo pipefail
 echo "==> Installing Sway + Wayland environment..."
 
 PKGS=(
-    foot           # default terminal emulator
-    wmenu          # default menu
+    #foot           # default terminal emulator
+    #wmenu          # default menu
     
     
     sway
