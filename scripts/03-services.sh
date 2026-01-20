@@ -32,8 +32,6 @@ sudo pacman -S --needed --noconfirm "${PKGS[@]}"
 echo "==> Enabling system services..."
 
 # Enable services
-sudo systemctl enable --now wireplumber.service
-sudo systemctl enable --now pipewire-alsa.service
 sudo systemctl enable --now bluetooth.service
 sudo systemctl enable --now cups.service
 
