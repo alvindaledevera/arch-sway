@@ -23,7 +23,7 @@ PKGS=(
     # xdg-user-dirs
     
     # mako           # notification daemon
-    # wofi           # application launcher
+    wofi           # application launcher
     # grim           # screenshot tool
     # slurp          # selection tool for grim
     # ttf-dejavu
