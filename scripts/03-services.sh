@@ -19,12 +19,12 @@ PKGS=(
     bluez
     bluez-utils
 
-    # Printing / Scanning
-    cups
-    cups-pdf
-    system-config-printer
-    sane
-    simple-scan
+    # # Printing / Scanning
+    # cups
+    # cups-pdf
+    # system-config-printer
+    # sane
+    # simple-scan
 )
 
 sudo pacman -S --needed --noconfirm "${PKGS[@]}"

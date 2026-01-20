@@ -8,22 +8,26 @@ set -euo pipefail
 echo "==> Installing Sway + Wayland environment..."
 
 PKGS=(
-    foot
-    wmenu
+    foot           # default terminal emulator
+    wmenu          # default menu
+    
+    
     sway
     swaylock
     swayidle
-    wayland-protocols
-    wl-clipboard
-    xdg-desktop-portal
-    xdg-user-dirs
+    
     alacritty      # terminal emulator
-    mako           # notification daemon
-    wofi           # application launcher
-    grim           # screenshot tool
-    slurp          # selection tool for grim
-    ttf-dejavu
-    ttf-liberation
+    # wayland-protocols
+    # wl-clipboard
+    # xdg-desktop-portal
+    # xdg-user-dirs
+    
+    # mako           # notification daemon
+    # wofi           # application launcher
+    # grim           # screenshot tool
+    # slurp          # selection tool for grim
+    # ttf-dejavu
+    # ttf-liberation
 )
 
 sudo pacman -S --needed --noconfirm "${PKGS[@]}"
