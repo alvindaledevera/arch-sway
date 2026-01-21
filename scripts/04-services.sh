@@ -36,6 +36,6 @@ echo "==> Enabling system services..."
 # Enable services
 sudo systemctl enable --now ly@tty1.service
 sudo systemctl enable --now bluetooth.service
-sudo systemctl enable --now cups.service
+#sudo systemctl enable --now cups.service
 
 echo "==> All services installed and enabled ✅"

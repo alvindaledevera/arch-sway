@@ -22,7 +22,8 @@ run() {
 # Execute scripts based on toggles
 $INSTALL_PACMAN && run "scripts/01-pacman.sh"
 $INSTALL_SWAY && run "scripts/02-sway.sh"
-$INSTALL_SERVICES && run "scripts/03-services.sh"
-$INSTALL_AUR && run "scripts/04-aur.sh"
+$INSTALL_KDE && run "scripts/03-kde.sh"
+$INSTALL_SERVICES && run "scripts/04-services.sh"
+$INSTALL_AUR && run "scripts/05-aur.sh"
 
 echo "==> Arch-Sway installation complete ✅"

@@ -13,8 +13,8 @@ PKGS=(
     
     
     sway
-    swaylock
-    swayidle
+    # swaylock
+    # swayidle
     
     alacritty      # terminal emulator
     # wayland-protocols
@@ -24,6 +24,7 @@ PKGS=(
     
     # mako           # notification daemon
     wofi           # application launcher
+    waybar         # statusbar
     # grim           # screenshot tool
     # slurp          # selection tool for grim
     # ttf-dejavu
