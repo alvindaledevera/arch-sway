@@ -9,7 +9,7 @@ echo "==> Installing KDE Desktop Environment..."
 
 PKGS=(
     plasma-desktop
-    dolphin
+    thunar
 )
 
 sudo pacman -S --needed --noconfirm "${PKGS[@]}"
