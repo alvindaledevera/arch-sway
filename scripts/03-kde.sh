@@ -14,6 +14,5 @@ PKGS=(
 
 sudo pacman -S --needed --noconfirm "${PKGS[@]}"
 
-sudo pacman -Rns kwallet-pam
 
 echo "==> Sway environment installed ✅"
