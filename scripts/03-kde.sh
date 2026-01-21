@@ -8,8 +8,7 @@ set -euo pipefail
 echo "==> Installing KDE Desktop Environment..."
 
 PKGS=(
-    plasma-desktop
-    dolphin
+    plasma
 )
 
 sudo pacman -S --needed --noconfirm "${PKGS[@]}"
