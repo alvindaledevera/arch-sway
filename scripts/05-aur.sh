@@ -40,7 +40,7 @@ PKGS=(
     google-chrome
 
     # Download Managers
-    freedownloadmanager
+    #freedownloadmanager
 )
 
 # Install all AUR packages at once
