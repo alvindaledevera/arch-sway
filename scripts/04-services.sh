@@ -12,10 +12,9 @@ PKGS=(
     ly
 
     # Audio / Sound
-    pipewire
-    pipewire-pulse
-    pipewire-alsa
-    wireplumber        # session manager for Pipewire
+    pipewire                    # audio engine / core service
+    wireplumber                 # session manager for Pipewire
+    pipewire-pulse              # PulseAudio compatibility layer (PulseAudio API)
 
     # Bluetooth
     bluez
@@ -35,6 +34,7 @@ echo "==> Enabling system services..."
 
 # Enable services
 sudo systemctl enable ly@tty1.service
+systemctl --user enable pipewire wireplumber pipewire-pulse
 sudo systemctl enable bluetooth.service
 #sudo systemctl enable --now cups.service
 

@@ -8,10 +8,11 @@ set -euo pipefail
 echo "==> Installing KDE Desktop Environment..."
 
 PKGS=(
-    plasma-desktop
-    kscreen
-    systemsettings
-    thunar
+    plasma-desktop          # minimal kde plasma setup
+    kscreen                 # monitor display engine server
+    systemsettings          # monitor GUI  control
+    plasma-pa               # audio cotrol
+    thunar                  # file browser
 )
 
 sudo pacman -S --needed --noconfirm "${PKGS[@]}"
