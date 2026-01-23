@@ -9,8 +9,8 @@ echo "==> Installing KDE Desktop Environment..."
 
 PKGS=(
     plasma-desktop
-    plasma-systemsettings
     kscreen
+    systemsettings
     thunar
 )
 
