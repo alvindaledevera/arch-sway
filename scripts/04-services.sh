@@ -10,8 +10,9 @@ echo "==> Installing system services..."
 PKGS=(
     #display manager
     ly
-
+    
     # Audio / Sound
+    sof-firmware                # SOF Firmware (Sound Open Firmware) for modern system
     pipewire                    # audio engine / core service
     wireplumber                 # session manager for Pipewire
     pipewire-pulse              # PulseAudio compatibility layer (PulseAudio API)
