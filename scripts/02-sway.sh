@@ -8,26 +8,28 @@ set -euo pipefail
 echo "==> Installing Sway + Wayland environment..."
 
 PKGS=(
-    #foot           # default terminal emulator
-    #wmenu          # default menu
+    #foot                   # default terminal emulator
+    #wmenu                  # default menu
     
     
     sway
-    swaybg          # background
+    swaybg                  # background
     # swaylock
     # swayidle
     
-    alacritty      # terminal emulator
+    alacritty               # terminal emulator
     # wayland-protocols
     # wl-clipboard
-    # xdg-desktop-portal
     # xdg-user-dirs
+
+    xdg-desktop-portal      # for screensharing
+    xdg-desktop-portal-wlr  # for screensharing
     
-    # mako           # notification daemon
-    wofi           # application launcher
-    waybar         # statusbar
-    # grim           # screenshot tool
-    # slurp          # selection tool for grim
+    # mako                  # notification daemon
+    wofi                    # application launcher
+    waybar                  # statusbar
+    # grim                  # screenshot tool
+    # slurp                  # selection tool for grim
     # ttf-dejavu
     # ttf-liberation
 )

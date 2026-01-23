@@ -12,6 +12,7 @@ PKGS=(
     kscreen                 # monitor display engine server
     systemsettings          # monitor GUI  control
     plasma-pa               # audio cotrol
+    plasma-nm               # wifi control
     thunar                  # file browser
 )
 
