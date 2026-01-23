@@ -13,6 +13,7 @@ PKGS=(
     
     
     sway
+    swaybg          # background
     # swaylock
     # swayidle
     
