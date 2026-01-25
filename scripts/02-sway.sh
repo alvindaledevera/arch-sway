@@ -16,8 +16,8 @@ PKGS=(
     swaybg                  # background
     wl-clipboard            
     autotiling              
-    # swaylock
-    # swayidle
+    swaylock
+    swayidle
     
     alacritty               # terminal emulator
     # wayland-protocols
@@ -34,8 +34,6 @@ PKGS=(
     # slurp                  # selection tool for grim
     # ttf-dejavu
     # ttf-liberation
-    inter-font              # font
-    ttf-nerd-fonts-symbols  # icons
 )
 
 sudo pacman -S --needed --noconfirm "${PKGS[@]}"

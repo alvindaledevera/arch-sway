@@ -16,7 +16,7 @@ PKGS=(
     pipewire                    # audio engine / core service
     wireplumber                 # session manager for Pipewire
     pipewire-pulse              # PulseAudio compatibility layer (PulseAudio API)
-
+    tree
     # # Bluetooth
     # bluez
     # bluez-utils
