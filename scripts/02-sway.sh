@@ -14,7 +14,8 @@ PKGS=(
     
     sway
     swaybg                  # background
-    wl-clipboard
+    wl-clipboard            
+    autotiling              
     # swaylock
     # swayidle
     
