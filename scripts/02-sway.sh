@@ -34,6 +34,8 @@ PKGS=(
     # slurp                  # selection tool for grim
     # ttf-dejavu
     # ttf-liberation
+    inter-font              # font
+    ttf-nerd-fonts-symbols  # icons
 )
 
 sudo pacman -S --needed --noconfirm "${PKGS[@]}"
