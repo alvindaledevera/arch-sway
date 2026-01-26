@@ -18,7 +18,7 @@ PKGS=(
     autotiling              
     swaylock
     swayidle
-    
+    blueman                 # bluetooth gui
     alacritty               # terminal emulator
     # wayland-protocols
     # wl-clipboard
