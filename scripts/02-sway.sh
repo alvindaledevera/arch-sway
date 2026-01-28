@@ -19,6 +19,7 @@ PKGS=(
     swaylock
     swayidle
     alacritty               # terminal emulator
+    pavucontrol             # audiocontrol
     # wayland-protocols
     # wl-clipboard
     # xdg-user-dirs

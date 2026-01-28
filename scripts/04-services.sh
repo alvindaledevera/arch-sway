@@ -21,6 +21,8 @@ PKGS=(
     bluez
     bluez-utils
 
+    # fingerprint
+    fprintd
     # # Printing / Scanning
     # cups
     # cups-pdf
